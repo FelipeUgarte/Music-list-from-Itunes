@@ -7,7 +7,7 @@
 
 import Foundation
 
-class ITuneAPIRepository {
+class ITunesAPIRepository {
     private let iTuneSongListRemoteDataSource: ITuneSongListRemoteDataSource
 
     init(iTuneSongListRemoteDataSource: ITuneSongListRemoteDataSource = ITuneSongListRemoteDataSource()) {
@@ -15,11 +15,11 @@ class ITuneAPIRepository {
     }
 
     func getItuneSongListRemoteDataSource() async throws -> [Track] {
-            do {
-                let tracks = try await iTuneSongListRemoteDataSource.fetchSongs()
-                return tracks
-            } catch {
-                throw error
-            }
+        do {
+            let tracks = try await iTuneSongListRemoteDataSource.fetchSongs()
+            return tracks
+        } catch {
+            throw error
         }
+    }
 }

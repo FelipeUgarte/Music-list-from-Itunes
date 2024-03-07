@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0CEC63D02B9767AE00F344E5 /* WOM_TestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEC63CF2B9767AE00F344E5 /* WOM_TestApp.swift */; };
-		0CEC63D22B9767AE00F344E5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEC63D12B9767AE00F344E5 /* ContentView.swift */; };
+		0CEC63D22B9767AE00F344E5 /* SongsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEC63D12B9767AE00F344E5 /* SongsListView.swift */; };
 		0CEC63D42B9767B000F344E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CEC63D32B9767B000F344E5 /* Assets.xcassets */; };
 		0CEC63D82B9767B000F344E5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CEC63D72B9767B000F344E5 /* Preview Assets.xcassets */; };
 		0CEC63E22B9767B000F344E5 /* WOM_TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEC63E12B9767B000F344E5 /* WOM_TestTests.swift */; };
@@ -16,11 +16,13 @@
 		0CEC63EE2B9767B000F344E5 /* WOM_TestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEC63ED2B9767B000F344E5 /* WOM_TestUITestsLaunchTests.swift */; };
 		0CEC63FC2B97686B00F344E5 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEC63FB2B97686B00F344E5 /* APIService.swift */; };
 		0CEC64002B97698F00F344E5 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEC63FF2B97698F00F344E5 /* APIResponse.swift */; };
-		0CEC64042B976CF200F344E5 /* ITunesRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEC64032B976CF200F344E5 /* ITunesRemoteDataSource.swift */; };
-		0CEC64072B97756B00F344E5 /* ITuneAPIRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEC64062B97756B00F344E5 /* ITuneAPIRepository.swift */; };
+		0CEC64072B97756B00F344E5 /* ITunesAPIRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEC64062B97756B00F344E5 /* ITunesAPIRepository.swift */; };
 		0CEC640A2B97761F00F344E5 /* ItunesURLPathHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEC64092B97761F00F344E5 /* ItunesURLPathHandler.swift */; };
 		0CEC640D2B9778B700F344E5 /* SongListUseCaseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEC640C2B9778B700F344E5 /* SongListUseCaseType.swift */; };
 		0CEC640F2B97792C00F344E5 /* SongListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEC640E2B97792C00F344E5 /* SongListUseCase.swift */; };
+		0CEC64122B99E07700F344E5 /* SongsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEC64112B99E07700F344E5 /* SongsListViewModel.swift */; };
+		0CEC64142B99EBA800F344E5 /* ITuneSongListRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEC64132B99EBA800F344E5 /* ITuneSongListRemoteDataSource.swift */; };
+		0CEC64182B99EF1200F344E5 /* SongDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEC64172B99EF1200F344E5 /* SongDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +45,7 @@
 /* Begin PBXFileReference section */
 		0CEC63CC2B9767AE00F344E5 /* WOM-Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WOM-Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CEC63CF2B9767AE00F344E5 /* WOM_TestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WOM_TestApp.swift; sourceTree = "<group>"; };
-		0CEC63D12B9767AE00F344E5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0CEC63D12B9767AE00F344E5 /* SongsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsListView.swift; sourceTree = "<group>"; };
 		0CEC63D32B9767B000F344E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0CEC63D52B9767B000F344E5 /* WOM_Test.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WOM_Test.entitlements; sourceTree = "<group>"; };
 		0CEC63D72B9767B000F344E5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -54,11 +56,13 @@
 		0CEC63ED2B9767B000F344E5 /* WOM_TestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WOM_TestUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0CEC63FB2B97686B00F344E5 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		0CEC63FF2B97698F00F344E5 /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
-		0CEC64032B976CF200F344E5 /* ITunesRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITunesRemoteDataSource.swift; sourceTree = "<group>"; };
-		0CEC64062B97756B00F344E5 /* ITuneAPIRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITuneAPIRepository.swift; sourceTree = "<group>"; };
+		0CEC64062B97756B00F344E5 /* ITunesAPIRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITunesAPIRepository.swift; sourceTree = "<group>"; };
 		0CEC64092B97761F00F344E5 /* ItunesURLPathHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesURLPathHandler.swift; sourceTree = "<group>"; };
 		0CEC640C2B9778B700F344E5 /* SongListUseCaseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongListUseCaseType.swift; sourceTree = "<group>"; };
 		0CEC640E2B97792C00F344E5 /* SongListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongListUseCase.swift; sourceTree = "<group>"; };
+		0CEC64112B99E07700F344E5 /* SongsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsListViewModel.swift; sourceTree = "<group>"; };
+		0CEC64132B99EBA800F344E5 /* ITuneSongListRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITuneSongListRemoteDataSource.swift; sourceTree = "<group>"; };
+		0CEC64172B99EF1200F344E5 /* SongDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,7 +150,8 @@
 		0CEC63FA2B97683700F344E5 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				0CEC63D12B9767AE00F344E5 /* ContentView.swift */,
+				0CEC63D12B9767AE00F344E5 /* SongsListView.swift */,
+				0CEC64172B99EF1200F344E5 /* SongDetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -157,8 +162,9 @@
 				0CEC640B2B97787100F344E5 /* Domain */,
 				0CEC64052B97755000F344E5 /* Repository */,
 				0CEC64022B976CD900F344E5 /* DataSource */,
-				0CEC63FA2B97683700F344E5 /* View */,
 				0CEC64012B976CAB00F344E5 /* Network */,
+				0CEC64102B99E05700F344E5 /* ViewModel */,
+				0CEC63FA2B97683700F344E5 /* View */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -183,7 +189,7 @@
 		0CEC64022B976CD900F344E5 /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
-				0CEC64032B976CF200F344E5 /* ITunesRemoteDataSource.swift */,
+				0CEC64132B99EBA800F344E5 /* ITuneSongListRemoteDataSource.swift */,
 			);
 			path = DataSource;
 			sourceTree = "<group>";
@@ -191,7 +197,7 @@
 		0CEC64052B97755000F344E5 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				0CEC64062B97756B00F344E5 /* ITuneAPIRepository.swift */,
+				0CEC64062B97756B00F344E5 /* ITunesAPIRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -212,6 +218,14 @@
 				0CEC64082B9775DE00F344E5 /* UseCase */,
 			);
 			path = Domain;
+			sourceTree = "<group>";
+		};
+		0CEC64102B99E05700F344E5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0CEC64112B99E07700F344E5 /* SongsListViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -345,13 +359,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CEC640F2B97792C00F344E5 /* SongListUseCase.swift in Sources */,
-				0CEC63D22B9767AE00F344E5 /* ContentView.swift in Sources */,
-				0CEC64042B976CF200F344E5 /* ITunesRemoteDataSource.swift in Sources */,
+				0CEC63D22B9767AE00F344E5 /* SongsListView.swift in Sources */,
 				0CEC640D2B9778B700F344E5 /* SongListUseCaseType.swift in Sources */,
 				0CEC640A2B97761F00F344E5 /* ItunesURLPathHandler.swift in Sources */,
 				0CEC63D02B9767AE00F344E5 /* WOM_TestApp.swift in Sources */,
 				0CEC64002B97698F00F344E5 /* APIResponse.swift in Sources */,
-				0CEC64072B97756B00F344E5 /* ITuneAPIRepository.swift in Sources */,
+				0CEC64142B99EBA800F344E5 /* ITuneSongListRemoteDataSource.swift in Sources */,
+				0CEC64122B99E07700F344E5 /* SongsListViewModel.swift in Sources */,
+				0CEC64072B97756B00F344E5 /* ITunesAPIRepository.swift in Sources */,
+				0CEC64182B99EF1200F344E5 /* SongDetailView.swift in Sources */,
 				0CEC63FC2B97686B00F344E5 /* APIService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -12,14 +12,10 @@ class ItunesURLPathHandler {
         switch endpoint {
             case .ItunesSongsList:
                 return String(format: "https://itunes.apple.com/search")
-            case .ItunesSongsDetail:
-                return String(format: "https://itunes.apple.com/search")
         }
     }
 }
 
 enum ItunesURLPathHandlerType {
     case ItunesSongsList
-    case ItunesSongsDetail
-
 }
